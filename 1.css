@@ -1,0 +1,309 @@
+ /* 基本样式重置 */  
+body {  
+  margin: 0;  
+  padding: 0;  
+  font-family: Arial, sans-serif;  
+  background-color: #f9f9f9; /* 添加背景色 */  
+}  
+  
+/* 头部样式 */  
+.header {  
+  background-color: #333;  
+  color: #fff;  
+  padding: 20px;  
+  text-align: center;  
+}  
+  
+.logo {  
+  height: 60px; /* 根据您的logo大小调整 */  
+  margin-bottom: 10px;  
+}  
+  
+/* 导航栏样式 */  
+.topnav {  
+  background-color: #fff;  
+  padding: 10px;  
+  text-align: center;  
+  border-bottom: 1px solid #ddd; /* 添加边框 */  
+}  
+  
+.topnav a {  
+  margin: 0 10px;  
+  padding: 10px;  
+  text-decoration: none;  
+  color: #333;  
+  font-weight: bold;  
+  transition: background-color 0.3s ease; /* 添加背景色过渡效果 */  
+}  
+  
+.topnav a:hover {  
+  background-color: #f0f0f0; /* 鼠标悬停时的背景色 */  
+}  
+  
+.topnav a.right-link {  
+  float: right;  
+  position: relative; /* 修改为相对定位 */  
+  right: 10px;  
+  top: -10px; /* 调整以匹配其他链接的垂直位置 */  
+}  
+  
+/* 主容器样式 */  
+.container {  
+  display: flex;  
+  flex-wrap: wrap;  
+  justify-content: space-around;  
+  padding: 20px;  
+}  
+  
+/* 左侧栏目样式 */  
+.leftcolumn {  
+  flex: 0 0 calc(50% - 20px);  
+  display: flex;  
+  flex-direction: column;  
+}  
+  
+/* 右侧栏目样式 */  
+.rightcolumn {  
+  flex: 0 0 calc(50% - 20px);  
+  display: flex;  
+  flex-direction: column;  
+}  
+  
+/* 卡片样式 */  
+.card {  
+  background-color: #fff;  
+  border-radius: 5px;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  margin-bottom: 20px;  
+  padding: 20px;  
+  text-align: left;  
+  transition: transform 0.3s ease;  
+}  
+  
+
+.card:hover {  
+  background-color: #BFBFBF; /* 悬停时的背景颜色 */  
+}
+
+.card:hover {  
+  transform: scale(1.05);  
+}  
+  
+/* 图片样式 */  
+.card-img, .profile-img, .post-img img {  
+  width: 100%;  
+  height: auto;  
+  border-radius: 5px;  
+  margin-bottom: 10px;  
+}  
+  
+.post-img {  
+  position: relative;  
+  width: 100%;  
+  height: 0;  
+  padding-bottom: 75%; /* 16:9 Aspect Ratio */  
+  overflow: hidden;  
+}  
+  
+.post-img img {  
+  position: absolute;  
+  width: 100%;  
+  height: 100%;  
+  object-fit: cover;  
+}  
+  
+/* 日期样式 */  
+.date {  
+  font-size: 14px;  
+  color: #777;  
+  margin-bottom: 10px;  
+}  
+  
+/* 链接样式 */  
+.read-more {  
+  display: inline-block;  
+  margin-top: 10px;  
+  padding: 5px 10px;  
+  background-color: #333;  
+  color: #fff;  
+  border-radius: 3px;  
+  text-decoration: none;  
+  transition: background-color 0.3s ease;  
+}  
+  
+.read-more:hover {  
+  background-color: #555;  
+}  
+  
+/* 热门帖子样式 */  
+.popular-posts .post-img {  
+  margin-bottom: 10px;  
+}  
+  
+.footer {  
+  background-color: #333;  
+  color: #fff;  
+  text-align: center;  
+  padding: 10px;  
+  position: fixed;  
+  bottom: 0;  
+  width: 100%;  
+}
+
+/* 容器样式 */  
+main.mm1 {  
+  max-width: 800px;  
+  margin: 0 auto;  
+}  
+  
+section {  
+  margin-bottom: 30px;  
+}  
+  
+h2 {  
+  color: #333;  
+}  
+  
+p, ul {  
+  border: 1px solid #ccc; /* 添加边框 */  
+  padding: 15px;  
+  margin: 0;  
+  transition: background-color 0.3s ease; /* 添加过渡效果 */  
+}  
+  
+li {  
+  margin-bottom: 5px;  
+}  
+  
+/* 鼠标悬停效果 */  
+p:hover, ul:hover {  
+  background-color: #f0f0f0; /* 颜色加深 */  
+  cursor: pointer; /* 改变鼠标样式 */  
+}  
+  
+/* 其他样式细节 */  
+.contact-info ul li {  
+  margin-bottom: 10px;  
+}  
+  
+.contact-info ul li strong {  
+  display: inline-block;  
+  width: 80px;  
+}
+
+.mm2 {  
+  max-width: 1200px;  
+  margin: 0 auto;  
+  padding: 20px;  
+}  
+  
+/* 标题样式 */  
+h2 {  
+  color: #333;  
+  text-align: center;  
+  margin-bottom: 30px;  
+}  
+  
+/* 最近旅行区块 */  
+.recent-trips {  
+  display: flex;  
+  flex-wrap: wrap;  
+  justify-content: space-around;  
+}  
+  
+.trip-card {  
+  width: calc(50% - 10px);  
+  margin-bottom: 20px;  
+  background-color: #fff;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  overflow: hidden;  
+  position: relative;  
+}  
+  
+.trip-card:hover {  
+  transform: scale(1.05);  
+  transition: transform 0.3s ease;  
+}  
+  
+.trip-card h3,  
+.trip-card p {  
+  padding: 10px;  
+  margin: 0;  
+}  
+  
+.trip-card img {  
+  width: 100%;  
+  display: block;  
+  transition: transform 0.5s ease;  
+}  
+  
+.trip-card:hover img {  
+  transform: scale(1.1);  
+}  
+  
+/* 目的地区块 */  
+.destinations ul {  
+  list-style-type: none;  
+  padding: 0;  
+  display: flex;  
+  flex-wrap: wrap;  
+  justify-content: space-around;  
+}  
+  
+.destinations li {  
+  flex: 1 1 20%;  
+  text-align: center;  
+  margin-bottom: 10px;  
+  padding: 10px;  
+  background-color: #fff;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  transition: transform 0.3s ease;  
+}  
+  
+.destinations li:hover {  
+  transform: scale(1.05);  
+}  
+  
+/* 旅行故事区块 */  
+.travel-stories article {  
+  background-color: #fff;  
+  padding: 20px;  
+  margin-bottom: 20px;  
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  
+  transition: transform 0.3s ease;  
+}  
+  
+.travel-stories article:hover {  
+  transform: scale(1.05);  
+}  
+  
+.travel-stories h3 {  
+  margin-top: 0;  
+}  
+  
+.travel-stories a {  
+  color: #007BFF;  
+  text-decoration: none;  
+  font-weight: bold;  
+}  
+  
+.travel-stories a:hover {  
+  text-decoration: underline;  
+}  
+  
+/* 响应式设计 */  
+@media (max-width: 768px) {  
+  .trip-card {  
+    width: 100%;  
+  }  
+    
+  .destinations li {  
+    flex: 1 1 50%;  
+  }  
+}  
+  
+@media (max-width: 480px) {  
+  .destinations li {  
+    flex: 1 1 100%;  
+  }  
+}
